@@ -1,123 +1,83 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Reset */
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #85c1e9, #f9b6c8);
-    color: #fff;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark text for visibility */
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
     text-align: center;
-    padding: 4rem 1rem;
-    border-bottom: 5px solid #ff6f61;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
-    font-family: 'Lobster', cursive;
     font-size: 3rem;
+    color: #000; /* Black text for visibility */
     margin-bottom: 1rem;
-    text-color:black;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #555; /* Gray subtitle for contrast */
+    margin-bottom: 1.5rem;
 }
 
 .btn-primary {
     background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease-in-out;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #e95b4e;
+    background-color: #e65c50;
 }
 
-/* Section Styling */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Section Styles */
+section {
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
-.container h2 {
-    font-family: 'Lobster', cursive;
+section h2 {
     font-size: 2.5rem;
-    color: #ff6f61;
+    color: #222; /* Dark heading text */
     margin-bottom: 1rem;
 }
 
-.container p, .container ol, .container ul {
-    margin-bottom: 1rem;
+section p, section li {
+    font-size: 1.2rem;
+    color: #444; /* Darker paragraph text */
 }
 
-/* Adoption Section */
-.adoption-section {
-    background-color: #fffdfd;
-    border: 2px solid #ff6f61;
-    padding: 1.5rem;
+.adoption ul {
+    list-style: none;
+    padding: 0;
 }
 
-.animal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.adoption li {
+    margin: 0.5rem 0;
 }
 
-.animal-card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.animal-card:hover {
-    transform: translateY(-5px);
-}
-
-.animal-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.animal-card h3 {
-    font-size: 1.5rem;
-    color: #ff6f61;
-    margin-bottom: 0.5rem;
-}
-
-/* Footer */
-.footer {
-    background: #ff6f61;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-.footer p {
-    font-size: 1rem;
+/* Contact Section */
+.contact p {
+    font-size: 1.2rem;
+    color: #555;
 }
