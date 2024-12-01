@@ -7,55 +7,61 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff8f3;
+    background-color: #fffaf5;
     color: #5c4033;
     line-height: 1.6;
 }
 
 /* Header */
 .header {
+    background: linear-gradient(90deg, #fcb1c3, #ffdfdf);
     text-align: center;
-    padding: 2rem;
-    background-color: #fdece7;
-    color: #7a5049;
-    border-bottom: 5px solid #fcb1c3;
+    padding: 2rem 1rem;
+    color: #5c4033;
+    border-bottom: 5px solid #d87a90;
 }
 
-.header h1 {
+.header-content h1 {
     font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.header p {
+.header-content p {
     font-size: 1.2rem;
-    font-style: italic;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(252, 177, 195, 0.8), rgba(255, 224, 224, 0.8)), 
-        url('https://source.unsplash.com/1600x900/?pets,animals') no-repeat center center/cover;
-    height: 60vh;
+    background: url('https://source.unsplash.com/1600x900/?happy-dogs') no-repeat center/cover;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+    padding: 2rem;
 }
 
 .hero-content h2 {
     font-size: 2.5rem;
-    color: #fff;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn-primary {
     background-color: #fcb1c3;
-    color: #fff;
-    padding: 0.8rem 2rem;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 1.2rem;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-primary:hover {
@@ -65,40 +71,86 @@ body {
 
 /* Section Styles */
 section {
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
-.philosophy, .volunteer {
-    background-color: #ffe4e1;
-    margin: 1.5rem auto;
+.philosophy {
+    background-color: #fff4f3;
     padding: 2rem;
     border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.philosophy h2, .volunteer h2, .adoption h2, .contact h2 {
+.philosophy h2 {
     font-size: 2rem;
-    color: #7a5049;
+    color: #5c4033;
+    margin-bottom: 1rem;
 }
 
-.volunteer ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
+.philosophy-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1.5rem;
 }
 
-.volunteer li {
-    margin-bottom: 0.8rem;
+/* Volunteer Section */
+.volunteer {
+    background-color: #fdece7;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer h2 {
+    font-size: 2rem;
+    color: #5c4033;
+    margin-bottom: 1rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px;
+}
+
+.step span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+    background-color: #fcb1c3;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 /* Adoption Section */
 .adoption .pet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .pet-card {
@@ -106,24 +158,16 @@ section {
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .pet-card:hover {
     transform: scale(1.05);
-}
-
-.pet-card h3 {
-    font-size: 1.5rem;
-    color: #5c4033;
-    margin-bottom: 0.5rem;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #fdece7;
-    color: #7a5049;
 }
