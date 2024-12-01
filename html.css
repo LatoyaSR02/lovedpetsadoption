@@ -172,7 +172,7 @@ section {
     transform: scale(1.05);
 }
 #logo{
+    top:70px;
     left:50px;
     position:absolute;
-    top:50px;
 }
