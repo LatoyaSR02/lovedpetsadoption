@@ -1,109 +1,124 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and playful font */
     line-height: 1.6;
-    background-color: #fff5f7; /* Light pink background */
-    color: #4f2a14; /* Deep brown for text */
+    background-color: #fff8f3; /* Light pink background */
+    color: #5c4033; /* Warm brown text */
 }
 
 /* Hero Section */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?pets') no-repeat center center/cover;
+    background: url('https://source.unsplash.com/1600x900/?puppy,kitten') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     text-align: center;
-    color: #4f2a14;
+    color: #fff;
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.85); /* Soft white overlay */
+    background: rgba(255, 224, 224, 0.8); /* Light pink semi-transparent */
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
     font-size: 3rem;
-    color: #7c4a33; /* Brown */
+    color: #4f2a14; /* Deep brown */
     margin-bottom: 1rem;
-    font-family: 'Georgia', serif;
 }
 
 .hero p {
     font-size: 1.5rem;
-    color: #5f3a2a; /* Medium brown */
     margin-bottom: 1.5rem;
 }
 
 .btn-primary {
-    background-color: #d291bc; /* Light pink */
+    background-color: #fcb1c3; /* Soft pink */
     color: #fff;
     text-decoration: none;
     padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 1.2rem;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #b77aa4; /* Slightly darker pink */
+    background-color: #e08cab; /* Slightly darker pink */
+    transform: scale(1.1); /* Fun zoom effect */
 }
 
 /* Section Styles */
 section {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
 section h2 {
-    font-size: 2.5rem;
-    color: #7c4a33; /* Brown */
+    font-size: 2rem;
+    color: #7a5049; /* Softer brown */
     margin-bottom: 1rem;
-    font-family: 'Georgia', serif;
 }
 
 section p, section li {
     font-size: 1.2rem;
-    color: #4f2a14; /* Dark brown */
+    color: #5c4033; /* Warm brown */
 }
 
-section ol li {
+.philosophy, .volunteer {
+    background-color: #ffe4e1; /* Soft pink box */
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer ol {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+    list-style: none;
+    padding: 0;
+}
+
+.volunteer li {
     margin-bottom: 0.5rem;
 }
 
 .adoption ul {
     list-style: none;
     padding: 0;
+    display: inline-block;
+    text-align: left;
 }
 
 .adoption li {
-    margin: 0.5rem 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 /* Contact Section */
 .contact p {
-    font-size: 1.2rem;
-    color: #4f2a14;
+    font-size: 1rem;
+    color: #5c4033;
 }
 
-/* Philosophy Section */
-.philosophy {
-    background-color: #fde8e9; /* Soft pink */
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 1rem auto;
-    max-width: 800px;
+.contact a {
+    color: #e08cab;
+    text-decoration: none;
 }
 
-/* Volunteer Section */
-.volunteer {
-    background-color: #faf1e6; /* Light beige */
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 1rem auto;
-    max-width: 800px;
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effects */
+section h2:hover {
+    color: #e08cab; /* Playful hover color for headings */
+    transform: scale(1.05);
 }
