@@ -1,124 +1,129 @@
 /* General Reset */
-body {
+* {
     margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and playful font */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f3;
+    color: #5c4033;
     line-height: 1.6;
-    background-color: #fff8f3; /* Light pink background */
-    color: #5c4033; /* Warm brown text */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fdece7;
+    color: #7a5049;
+    border-bottom: 5px solid #fcb1c3;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 /* Hero Section */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?puppy,kitten') no-repeat center center/cover;
-    height: 100vh;
+    background: linear-gradient(rgba(252, 177, 195, 0.8), rgba(255, 224, 224, 0.8)), 
+        url('https://source.unsplash.com/1600x900/?pets,animals') no-repeat center center/cover;
+    height: 60vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
     text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
     color: #fff;
-}
-
-.hero-content {
-    background: rgba(255, 224, 224, 0.8); /* Light pink semi-transparent */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    color: #4f2a14; /* Deep brown */
     margin-bottom: 1rem;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
 .btn-primary {
-    background-color: #fcb1c3; /* Soft pink */
+    background-color: #fcb1c3;
     color: #fff;
+    padding: 0.8rem 2rem;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 30px;
+    border-radius: 25px;
     font-size: 1.2rem;
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #e08cab; /* Slightly darker pink */
-    transform: scale(1.1); /* Fun zoom effect */
+    background-color: #e08cab;
+    transform: scale(1.1);
 }
 
 /* Section Styles */
 section {
-    padding: 2rem 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
-    color: #7a5049; /* Softer brown */
-    margin-bottom: 1rem;
-}
-
-section p, section li {
-    font-size: 1.2rem;
-    color: #5c4033; /* Warm brown */
-}
-
 .philosophy, .volunteer {
-    background-color: #ffe4e1; /* Soft pink box */
-    margin: 1rem auto;
+    background-color: #ffe4e1;
+    margin: 1.5rem auto;
     padding: 2rem;
     border-radius: 10px;
     max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.volunteer ol {
-    text-align: left;
-    margin: 0 auto;
-    max-width: 500px;
+.philosophy h2, .volunteer h2, .adoption h2, .contact h2 {
+    font-size: 2rem;
+    color: #7a5049;
+}
+
+.volunteer ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
 .volunteer li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
-.adoption ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: left;
+/* Adoption Section */
+.adoption .pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-.adoption li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+.pet-card {
+    background-color: #fdece7;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-/* Contact Section */
-.contact p {
-    font-size: 1rem;
-    color: #5c4033;
-}
-
-.contact a {
-    color: #e08cab;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Hover Effects */
-section h2:hover {
-    color: #e08cab; /* Playful hover color for headings */
+.pet-card:hover {
     transform: scale(1.05);
+}
+
+.pet-card h3 {
+    font-size: 1.5rem;
+    color: #5c4033;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fdece7;
+    color: #7a5049;
 }
